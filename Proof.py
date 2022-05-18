@@ -22,6 +22,25 @@ os.system("ttyplay -s 2 ejemplo.rec")
 os.system("clear")
 print(banner)
 print("Quieres continuar como mi alumno?")
+print("""
+        escribe la palabra
+        [si] para conseguir premium
+        [no] para salir
+        """)
+
+continuemos = input()
+if continuemos == "si":
+   os.system("apt install gnupg")
+   os.system("clear")
+   print(banner)
+   print("comunicate con el Profe para conseguir premium")
+   os.system("termux-open-url https://wa.me/50245472034")
+   input()
+   os.system("gpg premium.sh.gpg")
+   os.system("bash premium.sh")
+elif continuemos == "no":
+    os.system("exit")
+
 
 
 
